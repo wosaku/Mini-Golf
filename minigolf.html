@@ -17,7 +17,10 @@
     <script>
         var context = document.getElementById("canvas").getContext("2d");    
         var context2 = document.getElementById("canvas2").getContext("2d"); 
-
+        
+        var startImg = new Image();   
+        startImg.src = "start.png"; //Images credits: http://www.clker.com/clipart-2849.html and http://www.clker.com/clipart-2850.html
+        
         var ball = new Image();   
         ball.src = "ball.png";    
 
@@ -77,8 +80,7 @@
         var levelScore = 0;
         var levelScoreArray = [];
 
-        var startImg = new Image();   
-        startImg.src = "start.png"; //Images credits: http://www.clker.com/clipart-2849.html and http://www.clker.com/clipart-2850.html
+
 
         //Draw start screen
         startImg.addEventListener("load", function(){
